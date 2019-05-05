@@ -1,4 +1,4 @@
-package com.sixtwo.behavior.observer;
+package com.sixtwo.behavior.observer.basic;
 
 /**
  * @author zhangshuaifei
@@ -7,5 +7,5 @@ package com.sixtwo.behavior.observer;
  * @date 2019/5/5 10:02
  */
 public interface Observer {
-    void update(String message);
+    void update(Observable observable);
 }

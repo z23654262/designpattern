@@ -1,4 +1,4 @@
-package com.sixtwo.behavior.observer;
+package com.sixtwo.behavior.observer.basic;
 
 /**
  * @author zhangshuaifei

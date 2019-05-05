@@ -1,4 +1,4 @@
-package com.sixtwo.behavior.observer;
+package com.sixtwo.behavior.observer.basic;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +18,10 @@ public class WeChat implements Observable{
         notifyAllObservers();
     }
 
+    public String getMessage() {
+        return message;
+    }
+
     public WeChat() {
         this.list = new ArrayList<>();
     }
@@ -35,7 +39,7 @@ public class WeChat implements Observable{
     @Override
     public void notifyAllObservers() {
         for (Observer observer:list) {
-            observer.update(message);
+            observer.update(this);
         }
     }
 }

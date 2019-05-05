@@ -1,4 +1,4 @@
-package com.sixtwo.behavior.observer;
+package com.sixtwo.behavior.observer.basic;
 
 /**
  * @author zhangshuaifei
@@ -14,8 +14,8 @@ public class User implements Observer{
     }
 
     @Override
-    public void update(String message) {
+    public void update(Observable observable) {
+        this.message = ((WeChat)observable).getMessage();
         System.out.println(name+"收到推送消息："+message);
-        this.message = message;
     }
 }
