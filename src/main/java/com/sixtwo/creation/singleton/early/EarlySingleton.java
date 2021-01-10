@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 /**
  * @author zhangshuaifei
- * @description 单例模式-----饿汉模式
+ * @description 单例模式-----饿汉模式mac
  *              1)优点：实例在类加载时产生，不存在线程安全问题
  *              2)缺点：如果应用程序中没有调用该实例，会造成空间的浪费
  * @date 2019/4/11 20:56
